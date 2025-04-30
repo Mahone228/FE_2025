@@ -1,0 +1,310 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 8px;
+}
+html{
+  scroll-behavior: smooth;
+}
+header{
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding: 12px 0 0 0;
+}
+nav{
+  text-align: center;
+}
+nav>ul{
+  padding: 0;
+}
+nav>ul>li{
+  display: inline;
+  padding: 0 8px;
+}
+nav>ul>li>a{
+  color: #363636;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+nav>ul>li>a:hover{
+  color: #0078aa;
+}
+main{
+  padding: 80px 0 0 0;
+}
+#home{
+  background: url(../img/lady.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 80px 0 20px 0;
+}
+h1{
+  font-size: 36px;
+}
+.home-buttons{
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0 32px 0;
+}
+.home-buttons>a{
+  width: 44px;
+  color: #fff;
+  position: relative;
+}
+.home-buttons>a::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: #0078aa;
+  border-radius: 50%;
+}
+.arrow-h{
+  color: #0078aa;
+}
+.home-buttons>a>svg{
+  position: relative;
+  top: 12px;
+  left: 10px;
+}
+.home-buttons>a:hover{
+  color: #0078aa;
+}
+.home-buttons>a:hover::before{
+  background: #fff;
+  border: 1px solid #0078aa;
+}
+#about{
+  padding: 46px 0;
+}
+#about>div>img{
+  width: 100%;
+}
+.about-content{
+  text-align: center;
+}
+#services{
+  background: url(../img/services_bg.jpg);
+  text-align: center;
+  padding: 24px 0;
+}
+h2{
+  font-size: 32px;
+  margin: 6px 0;
+}
+.under-h{
+  color: #0078aa;
+}
+.services-list{
+  text-align: left;
+  padding: 20px 0;
+}
+.services-list>div{
+  background: #fff;
+  margin: 18px 12px;
+  padding: 20px 24px;
+}
+#price{
+  text-align: center;
+  padding: 40px 0;
+}
+.price-card{
+  background: #22b1ee;
+  color: #fff;
+  padding: 24px 0;
+  margin: 20px 0;
+}
+.card-name{
+  font-size: 24px;
+  font-weight: 600;
+}
+.card-price{
+  font-size: 42px;
+  font-weight: 800;
+  margin: 0;
+}
+.card-tr{
+  font-style: italic;
+}
+.price-card>ul{
+  margin: 0;
+  padding: 0;
+}
+.price-card>ul>li{
+  list-style: none;
+  padding: 16px 0;
+  font-size: 14px;
+}
+.price-card>button{
+  background: #fff;
+  color: #0078aa;
+  font-weight: 800;
+  padding: 12px 28px;
+  border: 1px solid #0078aa;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.price-card>button:hover{
+  background: #0078aa;
+  color: #fff;
+}
+.price-card:hover{
+  color: #0078aa;
+  background: #fff;
+  border: 2px solid #0078aa;
+  margin: -24px 0;
+  padding: 66px 0;
+  transition: all ease 0.3s;
+}
+#contact>div>img{
+  width: 100%;
+}
+.appointment-form{
+  text-align: center;
+}
+.appointment-form>form{
+  padding: 20px 40px;
+}
+.appointment-form>form>input{
+  width: 100%;
+  margin: 12px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+  padding: 0 12px;
+  font-style: italic;
+}
+.appointment-form>form>input::placeholder{
+  font-style: italic;
+}
+form>button{
+  margin: 12px 0;
+  background: #0078aa;
+  font-weight: 800;
+  padding: 12px 28px;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+form>button:hover{
+  border: 1px solid #0078aa;
+  background: transparent;
+  color: #0078aa;
+}
+footer{
+  background: #363636;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 20px 0;
+}
+.scroll-to-top{
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  transition:all 1s;
+}
+.scroll-to-top>svg{
+  width: 40px;
+  color: #0078aa;
+}
+@media screen and (min-width: 768px){
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+  }
+  #home{
+    padding: 80px 0;
+  }
+  #home>div>div{
+    text-align: left;
+    width: 500px;
+  }
+  .home-buttons{
+    width: 260px;
+    justify-content: space-between;
+  }
+  #about{
+    display: flex;
+    align-items: center;
+  }
+  #about>div{
+    flex: 50%;
+  }
+  .about-content{
+    text-align: left;
+  }
+  .services-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .services-list>div{
+    flex: 20%;
+  }
+  #price{
+    background: url(../img/pricing_bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .price-list{
+    display: flex;
+    padding: 40px 0 0 0;
+  }
+  .price-card{
+    width: 33%;
+  }
+  .white{
+    margin: -8px 0;
+    padding: 48px 0;
+  }
+  .price-card>ul>li{
+    font-size: 16px;
+  }
+  #contact{
+    display: flex;
+  }
+  .contact-image{
+    flex: 55%;
+    overflow: hidden;
+  }
+  #contact>.contact-image>img{
+    width: auto;
+  }
+  .appointment-form{
+    flex: 45%;
+    text-align: left;
+    padding: 80px 40px 0;
+  }
+  .appointment-form>form{
+    padding: 20px 0 0 0;
+  }
+  .appointment-form>form>input {
+    margin: 28px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .wrapper{
+    width: 1280px;
+    margin: 0 auto;
+  }
+  #home>div>div{
+    text-align: left;
+    padding: 80px 0 40px 0;
+    width: 500px;
+  }
+  body{
+    margin: 0;
+  }
+  #home{
+    border-radius: 0% 0 30% 0;
+  }
+  input{
+    font-size: 16px;
+  }
+}
