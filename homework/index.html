@@ -1,11 +1,24 @@
 ﻿<!DOCTYPE html>
-<html>
-  <head>
-      <title>AJAX</title>
-      <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
-  </head>
-
-  <body>
-    <script src="js/index.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Directory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div id="spinner" class="spinner">Loading...</div>
+    <section class="directory">
+      <form id="editor" class="user-form" hidden>
+        <input id="fullname" type="text" placeholder="Full Name" required>
+        <input id="contact" type="email" placeholder="Email Address" required>
+        <button type="submit">Update</button>
+        <button type="button" id="cancelEdit">Cancel</button>
+      </form>
+      <ul id="userList" class="user-list"></ul>
+    </section>
+  </main>
+  <script src="js/index.js"></script>
+</body>
 </html>
